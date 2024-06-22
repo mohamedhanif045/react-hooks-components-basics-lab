@@ -1,30 +1,39 @@
-import React from "react";
+import React from 'react';
 
-function NavBar() {
+// Define the Navbar component
+function Navbar() {
   return (
     <nav>
-      <a href="#home">I'm a link!</a>
+      {/* Navbar content here */}
     </nav>
   );
 }
 
+// Define the Home component
 function Home() {
   return (
-    <div id="home">
-      <h1>Home</h1>
+    <div>
+      {/* Home content here */}
     </div>
   );
 }
 
-{/* write an <About> component here */}
+// Define the About component
+function About() {
+  return (
+    <div id="about">
+      <h2>About</h2>
+    </div>
+  );
+}
 
-
+// Define the App component
 function App() {
   return (
     <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Navbar />
+      <Home />
+      <About />
     </div>
   );
 }
